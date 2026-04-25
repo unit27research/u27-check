@@ -1,0 +1,36 @@
+{
+  "name": "u27-check",
+  "version": "0.1.0",
+  "description": "Pre-flight failure detector for product launches.",
+  "type": "module",
+  "bin": {
+    "u27-check": "./bin/u27-check.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "lint": "node --check bin/u27-check.js && node --check src/*.js && node --check test/*.test.js",
+    "build": "npm run lint && npm test"
+  },
+  "keywords": [
+    "launch",
+    "preflight",
+    "cli",
+    "qa",
+    "unit27"
+  ],
+  "author": "Unit27",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "picocolors": "^1.1.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
