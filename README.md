@@ -1,53 +1,65 @@
-# u27-check
+# U27-CLI01 // u27-check
 
-Pre-flight failure detector for product launches.
+[![CI](https://github.com/unit27research/u27-check/actions/workflows/ci.yml/badge.svg)](https://github.com/unit27research/u27-check/actions/workflows/ci.yml)
 
-`u27-check` answers one narrow question:
+`u27-check` is a pre-flight failure detector for product launches.
+
+It answers one narrow question:
 
 ```text
 Will a real user hit a failure before they even get started?
 ```
 
-It checks the path:
+Read [DESIGN_NOTES.md](DESIGN_NOTES.md) for the system philosophy, scope boundaries, failure modes, and evaluation rationale.
 
-```text
-Install -> Run -> Load -> Click
-```
+## What It Does
 
-## Getting Started
+`u27-check` runs a local repository through the first user path:
+
+1. Build execution
+2. Runtime homepage load
+3. Runnable entry detection
+4. Primary call-to-action identification
+5. Primary call-to-action target validation
+
+It is designed to feel like a deterministic pre-flight check, not a product review.
+
+## Install
 
 ```bash
 npx u27-check
 ```
 
-Run it from the root of a local project repository.
+Run it from the root of a local project repository:
+
+```bash
+npx u27-check
+```
+
+Or point it at a local repo:
 
 ```bash
 npx u27-check /path/to/repo
 ```
 
-## What It Checks
-
-- Build execution
-- Runtime homepage load
-- Runnable entry instructions
-- Primary call-to-action detection
-- Primary call-to-action target validity
-
-## What It Does Not Check
-
-- Product quality
-- Startup readiness
-- Deep application correctness
-- Account creation, checkout, or backend workflows
-- Live URLs
-
 ## Output
 
 The CLI prints a concise terminal report and writes:
 
-- `u27/LAUNCH_PACKET.md`
-- `u27/AUDIT_LOG.json`
+1. `u27/LAUNCH_PACKET.md`
+2. `u27/AUDIT_LOG.json`
+
+## What It Does Not Do
+
+`u27-check` does not evaluate:
+
+1. Product quality
+2. Startup readiness
+3. Deep application correctness
+4. Account creation
+5. Checkout
+6. Backend workflows
+7. Live URLs
 
 ## Development
 
@@ -56,6 +68,12 @@ npm install
 npm test
 npm run build
 ```
+
+## Contributing
+
+Issues and pull requests are welcome. Keep proposed changes focused on deterministic pre-flight failures in the run, load, and primary-action path.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
