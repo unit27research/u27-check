@@ -6,9 +6,7 @@
 
 It answers one narrow question:
 
-```text
-Will a real user hit a failure before they even get started?
-```
+> Will a real user hit a failure before they even get started?
 
 Read [DESIGN_NOTES.md](DESIGN_NOTES.md) for the system philosophy, scope boundaries, failure modes, and evaluation rationale.
 
