@@ -8,6 +8,19 @@ It answers one narrow question:
 
 > Will a real user hit a failure before they even get started?
 
+## Why Use It
+
+Use `u27-check` before sharing a product demo, launch link, or portfolio project when the first user path needs a fast deterministic failure check.
+
+It is useful when the page might build but still fail at the first real interaction: no runnable entry, broken homepage load, missing primary call-to-action, or a primary action that points nowhere useful.
+
+Example:
+
+```text
+Problem: The project "works locally" but the first CTA is broken.
+Result: `u27-check` writes a launch packet and audit log before a real user hits the failure.
+```
+
 Read [DESIGN_NOTES.md](DESIGN_NOTES.md) for the system philosophy, scope boundaries, failure modes, and evaluation rationale.
 
 ## What It Does
