@@ -67,6 +67,10 @@ npm test
 npm run build
 ```
 
+## Reliability
+
+`u27-check` is maintained as part of the Unit27 research toolchain. CI verifies the build path and Node.js test suite before changes are considered ready.
+
 ## Contributing
 
 Issues and pull requests are welcome. Keep proposed changes focused on deterministic pre-flight failures in the run, load, and primary-action path.
