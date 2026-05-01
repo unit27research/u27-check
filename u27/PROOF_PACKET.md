@@ -1,19 +1,19 @@
 # Proof Packet
 
 Project: u27-check
-Generated: 2026-05-01T01:25:09+00:00
+Generated: 2026-05-01T03:12:41+00:00
 
 ## Verified Claims
 
 - u27-check can detect pre-launch failure conditions and write launch audit artifacts.
   - Case: `core-cli-acceptance`
   - Command: `npm test`
-  - Evidence: `u27/evidence/run-0001.txt`
+  - Evidence: `u27/evidence/run-0003.txt`
 
 - u27-check's package syntax checks pass for the CLI, source modules, and tests.
   - Case: `syntax-lint`
   - Command: `npm run lint`
-  - Evidence: `u27/evidence/run-0002.txt`
+  - Evidence: `u27/evidence/run-0004.txt`
 
 ## Open Failures
 

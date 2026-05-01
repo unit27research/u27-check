@@ -1,0 +1,31 @@
+$ npm test
+exit_code: 0
+
+## stdout
+
+> u27-check@0.1.0 test
+> node --test
+
+✔ identifyPrimaryCta prefers repeated CTA text (1.766917ms)
+✔ identifyPrimaryCta uses first above-fold CTA when no text repeats (0.384209ms)
+✔ validateCtaTarget marks empty onclick handlers as failures (0.246208ms)
+✔ checkEntry passes when a dev script exists and README mentions it (5.001ms)
+✔ checkEntry warns when script exists but README omits it (1.634041ms)
+✔ checkEntry fails when neither scripts nor setup instructions exist (1.559583ms)
+✔ writeOutputs creates launch packet and audit log (4.990709ms)
+✔ detectPackageManager prefers pnpm lockfile before npm (3.403042ms)
+✔ detectPackageManager falls back to npm when no lockfile exists (1.617625ms)
+✔ getScriptCommand builds package-manager specific run commands (1.06575ms)
+✔ runReport passes CTA checks for a static project with a valid primary link (20.302625ms)
+✔ runReport fails CTA target when primary link returns 404 (6.096416ms)
+✔ test/test-utils.js (83.879375ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 178.674542
+
+## stderr
