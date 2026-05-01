@@ -1,7 +1,7 @@
 {
   "name": "u27-check",
   "version": "0.1.0",
-  "description": "Pre-flight failure detector for product launches.",
+  "description": "Unit27 public field kit for deterministic product-launch preflight checks.",
   "type": "module",
   "bin": {
     "u27-check": "./bin/u27-check.js"
@@ -22,6 +22,7 @@
     "preflight",
     "cli",
     "qa",
+    "research-infrastructure",
     "unit27"
   ],
   "author": "Unit27",

@@ -4,6 +4,22 @@
 
 `u27-check` is a pre-flight failure detector for product launches.
 
+```text
+U27-C01
+U27-CHECK
+
+CLASS: CHECK
+FUNCTION: Launch Preflight + Failure Detection
+REF_ID: U27-CHECK-01
+```
+
+## Release Status
+
+`SOURCE_STATUS: PUBLIC_PACKAGE`
+`ACCESS_STATUS: CLEARED_FOR_EXTERNAL_USE`
+
+This repository is a released Unit27 field kit: visible, inspectable, and intended for orientation, testing, and practical use. Controlled protocol materials remain outside this source package.
+
 It answers one narrow question:
 
 > Will a real user hit a failure before they even get started?
@@ -82,7 +98,7 @@ npm run build
 
 ## Reliability
 
-`u27-check` is maintained as part of the Unit27 research toolchain. CI verifies the build path and Node.js test suite before changes are considered ready.
+`u27-check` is released as part of the Unit27 public tooling channel. CI verifies the build path and Node.js test suite before changes are considered ready.
 
 ## Contributing
 
