@@ -1,0 +1,10 @@
+$ npm run lint
+exit_code: 0
+
+## stdout
+
+> u27-check@0.1.0 lint
+> node --check bin/u27-check.js && node --check src/*.js && node --check test/*.test.js
+
+
+## stderr

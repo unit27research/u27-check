@@ -27,7 +27,6 @@
   "author": "Unit27",
   "license": "MIT",
   "dependencies": {
-    "cheerio": "^1.0.0",
     "picocolors": "^1.1.1"
   },
   "engines": {

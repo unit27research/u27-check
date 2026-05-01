@@ -1,0 +1,19 @@
+[
+  {
+    "claim": "u27-check can detect pre-launch failure conditions and write launch audit artifacts.",
+    "expected": "The Node test suite passes for CTA detection, entry checks, output writing, package-manager detection, and report behavior.",
+    "id": "core-cli-acceptance",
+    "limits": [
+      "This evidence covers the recorded local test suite only.",
+      "It does not prove every web framework, deployment host, or backend workflow."
+    ]
+  },
+  {
+    "claim": "u27-check's package syntax checks pass for the CLI, source modules, and tests.",
+    "expected": "npm run lint exits 0.",
+    "id": "syntax-lint",
+    "limits": [
+      "Syntax evidence does not replace runtime launch checks."
+    ]
+  }
+]

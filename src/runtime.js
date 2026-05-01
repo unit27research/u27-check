@@ -143,7 +143,12 @@ function startStaticServer(repoPath) {
       const address = server.address();
       resolve({
         port: address.port,
-        close: () => new Promise((done) => server.close(done)),
+        close: () =>
+          new Promise((done) => {
+            server.closeIdleConnections?.();
+            server.closeAllConnections?.();
+            server.close(done);
+          }),
       });
     });
   });

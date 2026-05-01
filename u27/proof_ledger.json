@@ -1,0 +1,34 @@
+{
+  "cases_path": "evals/proof_cases.json",
+  "project": {
+    "created_at": "2026-05-01T01:04:53+00:00",
+    "name": "u27-check"
+  },
+  "runs": [
+    {
+      "case_id": "core-cli-acceptance",
+      "claim": "u27-check can detect pre-launch failure conditions and write launch audit artifacts.",
+      "command": "npm test",
+      "evidence": [
+        "u27/evidence/run-0001.txt"
+      ],
+      "id": "run-0001",
+      "note": "",
+      "recorded_at": "2026-05-01T01:24:52+00:00",
+      "status": "pass"
+    },
+    {
+      "case_id": "syntax-lint",
+      "claim": "u27-check's package syntax checks pass for the CLI, source modules, and tests.",
+      "command": "npm run lint",
+      "evidence": [
+        "u27/evidence/run-0002.txt"
+      ],
+      "id": "run-0002",
+      "note": "",
+      "recorded_at": "2026-05-01T01:25:01+00:00",
+      "status": "pass"
+    }
+  ],
+  "schema_version": "0.1"
+}

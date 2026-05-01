@@ -1,0 +1,14 @@
+{
+  "findings": [],
+  "generated_at": "2026-05-01T01:30:12+00:00",
+  "proof_cases": [
+    "core-cli-acceptance",
+    "syntax-lint"
+  ],
+  "schema_version": "0.1",
+  "source": "README.md",
+  "summary": {
+    "unsupported_claims": 0,
+    "verified_claims": 2
+  }
+}

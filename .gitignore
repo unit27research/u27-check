@@ -1,4 +1,10 @@
 node_modules/
-u27/
+u27/*
+!u27/proof_ledger.json
+!u27/PROOF_PACKET.md
+!u27/BOUNDARY_REGISTER.md
+!u27/boundary_report.json
+!u27/evidence/
+!u27/evidence/*.txt
 .DS_Store
 npm-debug.log*
