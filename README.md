@@ -9,8 +9,9 @@ U27-C01
 U27-CHECK
 
 CLASS: CHECK
+OPERATING_POSITION: 07/07
 FUNCTION: Launch Preflight + Failure Detection
-REF_ID: U27-CHECK-01
+REF_ID: U27-C01-CHECK
 ```
 
 ## Release Status
