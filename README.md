@@ -1,4 +1,4 @@
-# U27-CLI01 // u27-check
+# U27-C01 // u27-check
 
 [![CI](https://github.com/unit27research/u27-check/actions/workflows/ci.yml/badge.svg)](https://github.com/unit27research/u27-check/actions/workflows/ci.yml)
 
@@ -53,20 +53,27 @@ It is designed to feel like a deterministic pre-flight check, not a product revi
 
 ## Install
 
+The current public release is GitHub-first. Run it from a local checkout:
+
 ```bash
-npx u27-check
+git clone https://github.com/unit27research/u27-check
+cd u27-check
+npm install
+npm test
+node bin/u27-check.js /path/to/project
 ```
 
-Run it from the root of a local project repository:
+From inside this checkout, you can also run it against the current directory:
 
 ```bash
-npx u27-check
+node bin/u27-check.js
 ```
 
-Or point it at a local repo:
+Or expose the local binary through npm:
 
 ```bash
-npx u27-check /path/to/repo
+npm link
+u27-check /path/to/project
 ```
 
 ## Output
